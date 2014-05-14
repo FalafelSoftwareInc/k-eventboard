@@ -1,0 +1,38 @@
+<div data-role="view" id="tabstrip-welcome" data-title="Welcome" data-layout="mobile-tabstrip">
+    <p class="welcome"></p>
+</div>
+
+<div data-role="view" id="tabstrip-sessions" data-title="Sessions" data-layout="mobile-tabstrip">
+
+</div>
+
+<div data-role="view" id="tabstrip-news" data-title="News" data-layout="mobile-tabstrip">
+
+</div>
+
+<div data-role="view" id="tabstrip-floorplans" data-title="Floor Plans" data-layout="mobile-tabstrip">
+
+</div>
+
+<div data-role="layout" data-id="mobile-tabstrip" data-show="App.views.Conference.onShow">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a class="nav-button" data-align="left" data-role="backbutton">Back</a>
+            <span data-role="view-title"></span>
+        </div>
+    </header>
+
+    <p>TabStrip</p>
+
+    <div data-role="footer">
+        <div data-role="tabstrip">
+            <a href="#tabstrip-welcome" data-icon="home">
+                Welcome
+            </a><a href="#tabstrip-sessions" data-icon="bookmarks">
+                Sessions
+            </a><a href="#tabstrip-news" data-icon="history">
+                News
+            </a><a href="#tabstrip-floorplans" data-icon="organize">Floor Plans</a>
+        </div>
+    </div>
+</div>

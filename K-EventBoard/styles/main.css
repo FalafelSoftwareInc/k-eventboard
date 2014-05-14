@@ -1,11 +1,7 @@
 /* IMAGES */
 .welcome-image {
-    background-image: url(../styles/images/appbuilder.png);
-    background-repeat: no-repeat;
-    width: 320px;
-    height: 250px;
     display: block;
-    margin: 0px auto;
+    margin: 5px auto;
 }
 .logo-image {
     background-image: url(../styles/images/logo.png);
@@ -14,6 +10,13 @@
     height: 60px;
     display: block;
     margin: 0px auto;
+}
+
+/* HOME */
+
+.conference-list-date {
+    margin: -12px auto auto 0;
+    font-style: italic;
 }
 
 /* LOGIN VIEW STYLES */

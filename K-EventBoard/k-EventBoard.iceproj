@@ -1,0 +1,2515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>64ded204-087c-4311-b776-ce3b0e9ac0d5</ProjectGuid>
+    <ProjectTypeGuids>{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}</ProjectTypeGuids>
+    <AppIdentifier>com.telerik.kEventBoard</AppIdentifier>
+    <ProjectName>k-EventBoard</ProjectName>
+    <IsRunnable>true</IsRunnable>
+    <FrameworkVersion>3.2.0</FrameworkVersion>
+    <AndroidPermissions>android.permission.CAMERA;android.permission.VIBRATE;android.permission.ACCESS_COARSE_LOCATION;android.permission.ACCESS_FINE_LOCATION;android.permission.ACCESS_LOCATION_EXTRA_COMMANDS;android.permission.READ_PHONE_STATE;android.permission.INTERNET;android.permission.RECEIVE_SMS;android.permission.RECORD_AUDIO;android.permission.MODIFY_AUDIO_SETTINGS;android.permission.READ_CONTACTS;android.permission.WRITE_CONTACTS;android.permission.WRITE_EXTERNAL_STORAGE;android.permission.ACCESS_NETWORK_STATE;android.permission.ACCOUNT_MANAGER;android.permission.GET_ACCOUNTS;android.permission.MANAGE_ACCOUNTS;android.permission.BROADCAST_STICKY</AndroidPermissions>
+    <CorePlugins>org.apache.cordova.battery-status;org.apache.cordova.camera;org.apache.cordova.console;org.apache.cordova.contacts;org.apache.cordova.device;org.apache.cordova.device-motion;org.apache.cordova.device-orientation;org.apache.cordova.dialogs;org.apache.cordova.file;org.apache.cordova.file-transfer;org.apache.cordova.geolocation;org.apache.cordova.globalization;org.apache.cordova.inappbrowser;org.apache.cordova.media;org.apache.cordova.media-capture;org.apache.cordova.network-information;org.apache.cordova.splashscreen;org.apache.cordova.statusbar;org.apache.cordova.vibration</CorePlugins>
+    <DeviceOrientations>Portrait;Landscape</DeviceOrientations>
+    <iOSStatusBarStyle>Default</iOSStatusBarStyle>
+    <AndroidHardwareAcceleration>false</AndroidHardwareAcceleration>
+    <WP8SupportedResolutions>ID_RESOLUTION_WVGA;ID_RESOLUTION_WXGA;ID_RESOLUTION_HD720P</WP8SupportedResolutions>
+    <BundleVersion>1.0</BundleVersion>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="cordova.android.js" />
+    <Content Include="cordova.ios.js" />
+    <Content Include="cordova.wp8.js" />
+    <Content Include="index.html" />
+    <Content Include="scripts\api.js" />
+    <Content Include="scripts\data\datasourceConferences.js" />
+    <Content Include="scripts\libs\everlive\everlive.all.min.js" />
+    <Content Include="scripts\libs\everlive\everlive.min.js" />
+    <Content Include="scripts\libs\everlive\kendo.data.everlive.min.js" />
+    <Content Include="scripts\libs\everlive\reqwest.min.js" />
+    <Content Include="scripts\libs\everlive\rsvp.min.js" />
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.af-ZA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.af.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.am-ET.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.am.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ar-AE.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ar-BH.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ar-DZ.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ar-EG.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ar-IQ.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ar-JO.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ar-KW.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ar-LB.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ar-LY.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ar-MA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ar-OM.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ar-QA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ar-SA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ar-SY.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ar-TN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ar-YE.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ar.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.arn-CL.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.arn.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.as-IN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.as.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.az-Cyrl-AZ.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.az-Cyrl.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.az-Latn-AZ.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.az-Latn.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.az.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ba-RU.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ba.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.be-BY.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.be.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.bg-BG.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.bg.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.bn-BD.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.bn-IN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.bn.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.bo-CN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.bo.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.br-FR.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.br.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.bs-Cyrl-BA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.bs-Cyrl.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.bs-Latn-BA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.bs-Latn.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.bs.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ca-ES.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ca.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.co-FR.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.co.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.cs-CZ.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.cs.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.cy-GB.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.cy.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.da-DK.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.da.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.de-AT.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.de-CH.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.de-DE.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.de-LI.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.de-LU.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.de.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.dsb-DE.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.dsb.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.dv-MV.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.dv.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.el-GR.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.el.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.en-029.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.en-AU.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.en-BZ.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.en-CA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.en-GB.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.en-IE.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.en-IN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.en-JM.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.en-MY.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.en-NZ.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.en-PH.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.en-SG.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.en-TT.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.en-US.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.en-ZA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.en-ZW.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.en.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-AR.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-BO.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-CL.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-CO.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-CR.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-DO.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-EC.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-ES.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-GT.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-HN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-MX.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-NI.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-PA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-PE.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-PR.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-PY.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-SV.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-US.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-UY.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es-VE.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.es.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.et-EE.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.et.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.eu-ES.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.eu.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.fa-IR.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.fa.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.fi-FI.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.fi.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.fil-PH.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.fil.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.fo-FO.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.fo.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.fr-BE.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.fr-CA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.fr-CH.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.fr-FR.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.fr-LU.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.fr-MC.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.fr.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.fy-NL.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.fy.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ga-IE.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ga.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.gd-GB.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.gd.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.gl-ES.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.gl.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.gsw-FR.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.gsw.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.gu-IN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.gu.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ha-Latn-NG.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ha-Latn.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ha.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.he-IL.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.he.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.hi-IN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.hi.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.hr-BA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.hr-HR.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.hr.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.hsb-DE.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.hsb.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.hu-HU.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.hu.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.hy-AM.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.hy.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.id-ID.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.id.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ig-NG.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ig.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ii-CN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ii.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.is-IS.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.is.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.it-CH.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.it-IT.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.it.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.iu-Cans-CA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.iu-Cans.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.iu-Latn-CA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.iu-Latn.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.iu.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ja-JP.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ja.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ka-GE.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ka.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.kk-KZ.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.kk.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.kl-GL.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.kl.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.km-KH.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.km.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.kn-IN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.kn.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ko-KR.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ko.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.kok-IN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.kok.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ky-KG.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ky.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.lb-LU.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.lb.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.lo-LA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.lo.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.lt-LT.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.lt.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.lv-LV.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.lv.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.mi-NZ.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.mi.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.mk-MK.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.mk.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ml-IN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ml.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.mn-Cyrl.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.mn-MN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.mn-Mong-CN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.mn-Mong.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.mn.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.moh-CA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.moh.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.mr-IN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.mr.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ms-BN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ms-MY.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ms.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.mt-MT.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.mt.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.nb-NO.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.nb.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ne-NP.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ne.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.nl-BE.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.nl-NL.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.nl.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.nn-NO.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.nn.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.no.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.nso-ZA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.nso.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.oc-FR.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.oc.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.or-IN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.or.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.pa-IN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.pa.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.pl-PL.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.pl.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.prs-AF.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.prs.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ps-AF.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ps.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.pt-BR.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.pt-PT.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.pt.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.qut-GT.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.qut.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.quz-BO.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.quz-EC.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.quz-PE.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.quz.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.rm-CH.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.rm.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ro-RO.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ro.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ru-RU.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ru-UA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ru.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.rw-RW.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.rw.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sa-IN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sa.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sah-RU.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sah.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.se-FI.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.se-NO.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.se-SE.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.se.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.si-LK.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.si.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sk-SK.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sk.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sl-SI.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sl.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sma-NO.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sma-SE.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sma.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.smj-NO.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.smj-SE.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.smj.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.smn-FI.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.smn.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sms-FI.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sms.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sq-AL.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sq.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sr-Cyrl-BA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sr-Cyrl-CS.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sr-Cyrl-ME.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sr-Cyrl-RS.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sr-Cyrl.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sr-Latn-BA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sr-Latn-CS.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sr-Latn-ME.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sr-Latn-RS.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sr-Latn.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sr.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sv-FI.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sv-SE.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sv.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sw-KE.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.sw.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.syr-SY.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.syr.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ta-IN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ta.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.te-IN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.te.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.tg-Cyrl-TJ.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.tg-Cyrl.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.tg.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.th-TH.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.th.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.tk-TM.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.tk.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.tn-ZA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.tn.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.tr-TR.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.tr.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.tt-RU.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.tt.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.tzm-Latn-DZ.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.tzm-Latn.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.tzm.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ug-CN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ug.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.uk-UA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.uk.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ur-PK.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.ur.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.uz-Cyrl-UZ.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.uz-Cyrl.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.uz-Latn-UZ.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.uz-Latn.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.uz.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.vi-VN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.vi.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.wo-SN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.wo.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.xh-ZA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.xh.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.yo-NG.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.yo.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.zh-CHS.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.zh-CHT.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.zh-CN.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.zh-Hans.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.zh-Hant.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.zh-HK.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.zh-MO.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.zh-SG.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.zh-TW.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.zh.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.zu-ZA.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\cultures\kendo.culture.zu.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\jquery.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\jquery.min.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.all.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.all.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.autocomplete.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.autocomplete.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.binder.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.binder.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.button.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.button.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.calendar.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.calendar.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.colorpicker.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.colorpicker.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.columnmenu.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.columnmenu.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.combobox.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.combobox.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.core.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.core.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.data.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.data.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.data.odata.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.data.odata.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.data.signalr.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.data.signalr.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.data.xml.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.data.xml.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.barcode.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.barcode.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.canvas.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.canvas.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.chart.funnel.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.chart.funnel.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.chart.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.chart.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.chart.polar.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.chart.polar.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.core.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.core.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.diagram.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.diagram.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.gauge.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.gauge.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.map.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.map.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.mobile.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.mobile.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.qrcode.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.qrcode.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.sparkline.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.sparkline.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.stock.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.stock.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.svg.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.svg.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.themes.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.themes.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.vml.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dataviz.vml.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.datepicker.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.datepicker.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.datetimepicker.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.datetimepicker.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.draganddrop.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.draganddrop.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dropdownlist.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.dropdownlist.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.editable.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.editable.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.editor.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.editor.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.filtermenu.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.filtermenu.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.fx.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.fx.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.grid.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.grid.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.groupable.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.groupable.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.imagebrowser.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.imagebrowser.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.list.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.list.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.listview.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.listview.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.maskedtextbox.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.maskedtextbox.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.menu.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.menu.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.actionsheet.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.actionsheet.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.application.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.application.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.button.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.button.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.buttongroup.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.buttongroup.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.drawer.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.drawer.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.listview.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.listview.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.loader.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.loader.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.modalview.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.modalview.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.navbar.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.navbar.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.pane.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.pane.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.popover.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.popover.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.scroller.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.scroller.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.scrollview.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.scrollview.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.shim.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.shim.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.splitview.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.splitview.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.switch.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.switch.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.tabstrip.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.tabstrip.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.view.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.mobile.view.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.multiselect.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.multiselect.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.notification.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.notification.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.numerictextbox.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.numerictextbox.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.pager.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.pager.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.panelbar.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.panelbar.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.popup.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.popup.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.progressbar.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.progressbar.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.reorderable.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.reorderable.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.resizable.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.resizable.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.router.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.router.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.scheduler.agendaview.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.scheduler.agendaview.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.scheduler.dayview.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.scheduler.dayview.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.scheduler.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.scheduler.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.scheduler.monthview.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.scheduler.monthview.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.scheduler.recurrence.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.scheduler.recurrence.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.scheduler.view.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.scheduler.view.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.selectable.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.selectable.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.slider.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.slider.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.sortable.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.sortable.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.splitter.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.splitter.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.tabstrip.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.tabstrip.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.timepicker.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.timepicker.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.timezones.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.tooltip.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.tooltip.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.touch.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.touch.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.treeview.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.treeview.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.upload.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.upload.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.userevents.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.userevents.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.validator.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.validator.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.view.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.view.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.web.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.web.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.window.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\js\kendo.window.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Black\editor.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Black\imagebrowser.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Black\indeterminate.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Black\loading-image.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Black\loading.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Black\loading_2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Black\markers.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Black\markers_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Black\slider-h.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Black\slider-v.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Black\sprite.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Black\sprite_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\BlueOpal\editor.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\BlueOpal\imagebrowser.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\BlueOpal\indeterminate.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\BlueOpal\loading-image.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\BlueOpal\loading.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\BlueOpal\loading_2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\BlueOpal\markers.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\BlueOpal\markers_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\BlueOpal\slider-h.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\BlueOpal\slider-v.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\BlueOpal\sprite.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\BlueOpal\sprite_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Bootstrap\editor.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Bootstrap\imagebrowser.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Bootstrap\indeterminate.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Bootstrap\loading-image.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Bootstrap\loading.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Bootstrap\loading_2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Bootstrap\markers.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Bootstrap\markers_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Bootstrap\slider-h.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Bootstrap\slider-v.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Bootstrap\sprite.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Bootstrap\sprite_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Default\editor.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Default\imagebrowser.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Default\indeterminate.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Default\loading-image.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Default\loading.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Default\loading_2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Default\markers.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Default\markers_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Default\slider-h.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Default\slider-v.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Default\sprite.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Default\sprite_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Flat\editor.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Flat\imagebrowser.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Flat\indeterminate.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Flat\loading-image.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Flat\loading.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Flat\loading_2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Flat\markers.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Flat\markers_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Flat\slider-h.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Flat\slider-v.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Flat\sprite.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Flat\sprite_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\HighContrast\editor.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\HighContrast\imagebrowser.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\HighContrast\indeterminate.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\HighContrast\loading-image.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\HighContrast\loading.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\HighContrast\loading_2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\HighContrast\markers.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\HighContrast\markers_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\HighContrast\slider-h.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\HighContrast\slider-v.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\HighContrast\sprite.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\HighContrast\sprite_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\images\back.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\images\kendoui.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\images\kendoui.woff">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\images\wp8_icons.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\images\wp8_inverseicons.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.black.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.black.mobile.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.blueopal.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.blueopal.mobile.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.bootstrap.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.bootstrap.mobile.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.common-bootstrap.core.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.common-bootstrap.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.common.core.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.common.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.dataviz.black.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.dataviz.blueopal.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.dataviz.bootstrap.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.dataviz.default.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.dataviz.flat.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.dataviz.highcontrast.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.dataviz.metro.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.dataviz.metroblack.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.dataviz.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.dataviz.mobile.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.dataviz.moonlight.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.dataviz.silver.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.dataviz.uniform.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.default.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.default.mobile.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.flat.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.flat.mobile.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.highcontrast.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.highcontrast.mobile.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.metro.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.metro.mobile.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.metroblack.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.metroblack.mobile.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.mobile.all.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.mobile.android.dark.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.mobile.android.light.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.mobile.blackberry.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.mobile.common.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.mobile.flat.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.mobile.ios.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.mobile.meego.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.mobile.wp8.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.moonlight.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.moonlight.mobile.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.rtl.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.silver.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.silver.mobile.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.uniform.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\kendo.uniform.mobile.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\MetroBlack\editor.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\MetroBlack\imagebrowser.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\MetroBlack\indeterminate.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\MetroBlack\loading-image.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\MetroBlack\loading.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\MetroBlack\loading_2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\MetroBlack\markers.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\MetroBlack\markers_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\MetroBlack\slider-h.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\MetroBlack\slider-v.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\MetroBlack\sprite.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\MetroBlack\sprite_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Metro\editor.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Metro\imagebrowser.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Metro\indeterminate.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Metro\loading-image.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Metro\loading.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Metro\loading_2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Metro\markers.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Metro\markers_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Metro\slider-h.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Metro\slider-v.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Metro\sprite.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Metro\sprite_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Moonlight\editor.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Moonlight\imagebrowser.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Moonlight\indeterminate.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Moonlight\loading-image.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Moonlight\loading.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Moonlight\loading_2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Moonlight\markers.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Moonlight\markers_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Moonlight\slider-h.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Moonlight\slider-v.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Moonlight\sprite.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Moonlight\sprite_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Silver\editor.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Silver\imagebrowser.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Silver\indeterminate.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Silver\loading-image.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Silver\loading.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Silver\loading_2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Silver\markers.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Silver\markers_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Silver\slider-h.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Silver\slider-v.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Silver\sprite.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Silver\sprite_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\brushed-metal.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\dots1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\dots10.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\dots11.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\dots12.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\dots13.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\dots2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\dots3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\dots4.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\dots5.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\dots6.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\dots7.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\dots8.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\dots9.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\glass-lighter.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\glass.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\highlight.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\hsv-gradient.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\hue.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\leather1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\leather2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\noise.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\stripe1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\stripe2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\stripe3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\stripe4.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\stripe5.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\stripe6.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\transparency.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\textures\transtexture.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Uniform\editor.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Uniform\imagebrowser.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Uniform\indeterminate.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Uniform\loading-image.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Uniform\loading.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Uniform\loading_2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Uniform\markers.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Uniform\markers_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Uniform\slider-h.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Uniform\slider-v.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Uniform\sprite.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\styles\Uniform\sprite_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\vsdoc\kendo.all-vsdoc.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\vsdoc\kendo.all.min.intellisense.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\vsdoc\kendo.dataviz-vsdoc.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\vsdoc\kendo.dataviz.min.intellisense.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\vsdoc\kendo.mobile-vsdoc.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\vsdoc\kendo.mobile.min.intellisense.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\vsdoc\kendo.web-vsdoc.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\kendoui\vsdoc\kendo.web.min.intellisense.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\spin\spin.min.js" />
+    <Content Include="scripts\libs\toastr\toastr.min.css" />
+    <Content Include="scripts\libs\toastr\toastr.min.js" />
+    <Content Include="scripts\libs\underscore\underscore-min.js" />
+    <Content Include="scripts\libs\underscore\underscore.string.min.js" />
+    <Content Include="scripts\models\conference.js" />
+    <Content Include="scripts\utils\settings.js" />
+    <Content Include="scripts\views\conference.js" />
+    <Content Include="scripts\views\shared.js" />
+    <Content Include="styles\font-awesome\css\font-awesome-ie7.css" />
+    <Content Include="styles\font-awesome\css\font-awesome-ie7.min.css" />
+    <Content Include="styles\font-awesome\css\font-awesome.css" />
+    <Content Include="styles\font-awesome\css\font-awesome.min.css" />
+    <Content Include="styles\font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="styles\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="styles\font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="styles\font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="styles\font-awesome\font\FontAwesome.otf" />
+    <Content Include="views\conferences\detail.html" />
+    <Content Include="views\conferences\listTemplate.html" />
+    <Content Include="views\home.html" />
+    <Resource Include="App_Resources\Android\drawable-hdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-mdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-nodpi\splashscreen.9.png" />
+    <Resource Include="App_Resources\iOS\Default-568h@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait@2x.png" />
+    <Resource Include="App_Resources\iOS\Default.png" />
+    <Resource Include="App_Resources\iOS\Default@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-40.png" />
+    <Resource Include="App_Resources\iOS\icon-40@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-60.png" />
+    <Resource Include="App_Resources\iOS\icon-60@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-72.png" />
+    <Resource Include="App_Resources\iOS\icon-72@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-76.png" />
+    <Resource Include="App_Resources\iOS\icon-76@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small@2x.png" />
+    <Resource Include="App_Resources\iOS\icon.png" />
+    <Resource Include="App_Resources\iOS\icon@2x.png" />
+    <Resource Include="App_Resources\WP8\ApplicationIcon.png" />
+    <Resource Include="App_Resources\WP8\SplashScreenImage.jpg" />
+    <Resource Include="App_Resources\WP8\Tiles\Iconic\110x110.png" />
+    <Resource Include="App_Resources\WP8\Tiles\Iconic\202x202.png" />
+    <Content Include="data\weather.json" />
+    <Content Include="kendo\js\jquery.min.js" />
+    <Content Include="kendo\js\kendo.mobile.min.js" />
+    <Content Include="kendo\styles\kendo.mobile.all.min.css" />
+    <Content Include="kendo\styles\images\back.png" />
+    <Content Include="kendo\styles\images\kendoui.ttf" />
+    <Content Include="kendo\styles\images\kendoui.woff" />
+    <Content Include="kendo\styles\images\wp8_icons.png" />
+    <Content Include="kendo\styles\images\wp8_inverseicons.png" />
+    <Content Include="scripts\app.js" />
+    <Content Include="scripts\layouts\baselayout.js" />
+    <Content Include="scripts\layouts\default.js" />
+    <Content Include="scripts\libs\require\require.js" />
+    <Content Include="scripts\libs\require\text.js" />
+    <Content Include="scripts\location.js" />
+    <Content Include="scripts\login.js" />
+    <Content Include="scripts\main.js" />
+    <Content Include="scripts\utils\alerts.js" />
+    <Content Include="scripts\utils\helpers.js" />
+    <Content Include="scripts\views\baseview.js" />
+    <Content Include="scripts\views\home.js" />
+    <Content Include="scripts\weather.js" />
+    <Content Include="styles\images\eventboard.png" />
+    <Content Include="styles\main.css" />
+    <Content Include="styles\images\appbuilder.png" />
+    <Content Include="styles\images\appbuilder2x.png" />
+    <Content Include="styles\images\location.png" />
+    <Content Include="styles\images\location2x.png" />
+    <Content Include="styles\images\location_active.png" />
+    <Content Include="styles\images\location_active2x.png" />
+    <Content Include="styles\images\logo.png" />
+    <Content Include="styles\images\logo2x.png" />
+    <Content Include="styles\images\search.png" />
+    <Content Include="styles\images\search2x.png" />
+    <Content Include="styles\images\search_active.png" />
+    <Content Include="styles\images\search_active2x.png" />
+    <Content Include="styles\images\sprite-weather.png" />
+    <Content Include="styles\images\sprite-weather2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Resources\" />
+    <Folder Include="App_Resources\Android\" />
+    <Folder Include="App_Resources\Android\drawable-hdpi\" />
+    <Folder Include="App_Resources\Android\drawable-ldpi\" />
+    <Folder Include="App_Resources\Android\drawable-mdpi\" />
+    <Folder Include="App_Resources\Android\drawable-nodpi\" />
+    <Folder Include="App_Resources\iOS\" />
+    <Folder Include="App_Resources\WP8\" />
+    <Folder Include="App_Resources\WP8\Tiles\" />
+    <Folder Include="App_Resources\WP8\Tiles\Iconic\" />
+    <Folder Include="data\" />
+    <Folder Include="kendo\" />
+    <Folder Include="kendo\js\" />
+    <Folder Include="kendo\styles\" />
+    <Folder Include="kendo\styles\images\" />
+    <Folder Include="scripts\libs\everlive\" />
+    <Folder Include="scripts\libs\kendoui\" />
+    <Folder Include="scripts\libs\kendoui\js\" />
+    <Folder Include="scripts\libs\kendoui\js\cultures\" />
+    <Folder Include="scripts\libs\kendoui\styles\" />
+    <Folder Include="scripts\libs\kendoui\styles\Black\" />
+    <Folder Include="scripts\libs\kendoui\styles\BlueOpal\" />
+    <Folder Include="scripts\libs\kendoui\styles\Bootstrap\" />
+    <Folder Include="scripts\libs\kendoui\styles\Default\" />
+    <Folder Include="scripts\libs\kendoui\styles\Flat\" />
+    <Folder Include="scripts\libs\kendoui\styles\HighContrast\" />
+    <Folder Include="scripts\libs\kendoui\styles\images\" />
+    <Folder Include="scripts\libs\kendoui\styles\MetroBlack\" />
+    <Folder Include="scripts\libs\kendoui\styles\Metro\" />
+    <Folder Include="scripts\libs\kendoui\styles\Moonlight\" />
+    <Folder Include="scripts\libs\kendoui\styles\Silver\" />
+    <Folder Include="scripts\libs\kendoui\styles\textures\" />
+    <Folder Include="scripts\libs\kendoui\styles\Uniform\" />
+    <Folder Include="scripts\libs\kendoui\vsdoc\" />
+    <Folder Include="scripts\libs\spin\" />
+    <Folder Include="scripts\libs\toastr\" />
+    <Folder Include="scripts\libs\underscore\" />
+    <Folder Include="scripts\models\" />
+    <Folder Include="scripts\data\" />
+    <Folder Include="styles\font-awesome\" />
+    <Folder Include="styles\font-awesome\css\" />
+    <Folder Include="styles\font-awesome\font\" />
+    <Folder Include="views\" />
+    <Folder Include="Plugins\" />
+    <Folder Include="scripts\" />
+    <Folder Include="scripts\libs\" />
+    <Folder Include="scripts\libs\require\" />
+    <Folder Include="scripts\layouts\" />
+    <Folder Include="scripts\views\" />
+    <Folder Include="scripts\utils\" />
+    <Folder Include="styles\" />
+    <Folder Include="styles\images\" />
+    <Folder Include="views\conferences\" />
+    <Folder Include="views\shared\" />
+  </ItemGroup>
+  <Import Project="$(IceniumTargets)Build.targets" />
+  <!--
+    TODO: Uncomment this code if you need to customize the build process.
+    <Target Name="BeforeBuild">
+        <Message Text="TODO: Implement BeforeBuild" Importance="high" />
+    </Target>
+
+    <Target Name="AfterBuild">
+        <Message Text="TODO: Implement AfterBuild" Importance="high" />
+    </Target>
+    -->
+</Project>
